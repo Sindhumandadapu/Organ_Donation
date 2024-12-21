@@ -1,0 +1,249 @@
+
+<html>
+<head>
+    
+     <style>
+        body {
+           color:bisque;
+	background-image: url('kk.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+	background-position: top center;
+  text-overflow: unset;
+        overflow-x: hidden;
+
+        }
+            input[type="text"], input[type="email"],input[type="number"], select, textarea {
+           
+	font-size:14px;
+    border-radius:10px;
+	font-weight: bold;
+	color: #581010;
+	box-sizing:barder-box;
+	border:1px solid transparent;
+	}
+	input[type="submit"]:hover{
+		background-color: darkmagenta;
+        }
+      a:hover{
+		font-weight: bold;
+		font-size: 20px;
+	}
+	form {
+		color:#778899;
+	background: transparent;
+	padding: 45px;
+	background-image: url('kk.jpg');
+	background-repeat: no-repeat;
+	margin-top:0%;
+	width:fit-content;
+	border-radius: 50px;
+	margin-left:500px;
+
+	height: max-content;
+	}
+	input[type=submit]{
+
+	font-weight: bold;
+	padding: 10px 25px;
+	font-size:14px;
+    background-color:aqua;
+    border-radius:10px;
+	box-sizing:barder-box;
+	border:1px solid transparent;
+	background-color:aqua;
+	}
+	input[type=text] {
+	
+	font-size:14px;
+    border-radius:10px;
+	font-weight: bold;
+	color: #581010;
+	box-sizing:barder-box;
+	border:1px solid transparent;
+	}
+	input[type="submit"]:hover{
+		background-color: darkmagenta;
+	}
+	h1{
+	color:gold;
+	text-align: center;
+	margin: 0 0 15px;
+	position: relative;
+	}
+    f{
+		background-color: rgb(217, 241, 100);
+		border-style:ridge;
+		padding:8px;
+		border-radius:14px;
+	}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DonarForm</h1>
+        <form action="reg1.jsp" name="form"method="post" id="registrationForm" onsubmit="return validateForm()">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" class="f"name="f1"placeholder="ex:Sindhu" pattern="^[A-Z][a-z0-9]+"minlength="3">
+            <span id="firstNameError" class="error"></span><br><br>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName"class="f" name="f2" placeholder="ex:Mandadapu"pattern="^[A-Z][a-z0-9]+"minlength="3">
+            <span id="lastNameError" class="error"></span><br><br>
+            
+            <label for="parentName">Mother's/Father's Name:</label>
+            <input type="text" id="parentName"class="f" name="f3" placeholder="ex:Mandadpu vara"pattern="^[A-Z][a-z0-9]+"minlength="5">
+            <span id="parentNameError" class="error"></span><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="f"name="f4"placeholder="ex:@gmail.com">
+            <span id="emailError" class="error"></span><br><br>
+            
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="number" class="f"id="mobileNumber" name="f5">
+            <span id="mobileNumberError" class="error"></span><br><br>
+            
+            <label for="age">Age:</label>
+            <input type="number"class="f" id="age" name="f6">
+            <span id="ageError" class="error"></span><br><br>
+            
+            <label for="bloodGroup">Blood Group:</label>
+            <select id="bloodGroup" class="f"name="f7">
+                <option value="">Select</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+            <span id="bloodGroupError" class="error"></span><br><br>
+            
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="f8" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="f8" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="f8" value="other">
+            <label for="other">Other</label>
+            <span id="genderError" class="error"></span><br><br>
+            
+            <label for="address">Current Address:</label>
+            <textarea id="address"class="f" name="f9"minlength="10"></textarea>
+            <span id="addressError" class="error"></span><br><br>
+            
+            <label for="pinCode">Pin Code:</label>
+            <input type="number" class="f"id="pinCode" name="f10">
+            <span id="pinCodeError" class="error"></span><br><br>
+            
+            <label><u>Organs To Donate</u></label><br>
+          <label for="heart">Heart:</label>
+        <label for="heart">Heart:</label>
+        <input type="radio" id="heartYes" name="f11" value="yes">
+        <label for="heartYes">Yes</label>
+        <input type="radio" id="heartNo" name="f11" value="no" checked>
+        <label for="heartNo">No</label>
+        <br>
+
+
+<label for="Liver">Liver:</label>
+        <input type="radio" id="LiverYes" name="f12" value="yes">
+        <label for="lungsYes">Yes</label>
+        <input type="radio" id="LiversNo" name="f12" value="no" checked>
+        <label for="LiverNo">No</label>
+        <br>
+        
+        <label for="Kidney">Kidney:</label>
+        <input type="radio" id="KidneyYes" name="f13" value="yes">
+        <label for="KidneyYes">Yes</label>
+        <input type="radio" id="KindneyNo" name="f13" value="no" checked>
+        <label for="KidneyNo">No</label>
+        <br>
+	<label for="lungs">Lungs:</label>
+        <input type="radio" id="lungsYes" name="f14" value="yes">
+        <label for="lungsYes">Yes</label>
+        <input type="radio" id="lungsNo" name="f14" value="no" checked>
+        <label for="lungsNo">No</label>
+        <br>
+        
+        <label for="pancreas">Pancreas:</label>
+        <input type="radio" id="pancreasYes" name="f15" value="yes">
+        <label for="pancreasYes">Yes</label>
+        <input type="radio" id="pancreasNo" name="f15" value="no" checked>
+        <label for="pancreasNo">No</label>
+        <br>
+        
+            <div>
+							<center><input type="submit" value="REGISTER NOW"></center><br><br>
+						</div>
+						<a href="main1.html">To Go Home</a>
+
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var parentName = document.getElementById("parentName").value;
+            var email = document.getElementById("email").value;
+            var mobileNumber = document.getElementById("mobileNumber").value;
+            var age = document.getElementById("age").value;
+            var bloodGroup = document.getElementById("bloodGroup").value;
+            var gender = document.querySelector('input[name="f8"]:checked');
+            var address = document.getElementById("address").value;
+            var pinCode = document.getElementById("pinCode").value;
+
+            // Regular expressions for validation
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var mobileRegex = /^[0-9]{10}$/;
+            var pinCodeRegex = /^[0-9]{6}$/;
+            if (firstName == "" ||lastName == "" || parentName == "" || email == "" || mobileNumber == ""||age == "" ||bloodGroup  == "" || gender == "" || address == "" || pinCode == "") {
+      alert("All fields must be filled out");
+             return false;
+            }
+
+            if (!emailRegex.test(email)) {
+               alerrt("Please enter a valid email address.ex:s@gmail.com");
+                return false;
+            }
+
+            if (!mobileRegex.test(mobileNumber)) {
+               alert("Please enter a valid mobile number.");
+                return false;
+            }
+
+            if (isNaN(age) || age <=18) {
+               alert("Please enter a valid age above 18 .");
+                return false;
+            }
+
+            if (bloodGroup === "") {
+               alert("Please select a blood group.");
+                return false;
+            }
+
+            if (gender === null) {
+                alert( "Please select a gender.");
+                return false;
+            }
+
+            if (address.trim() === "") {
+               alert( "Please enter your address.");
+                return false;
+            }
+
+            if (!pinCodeRegex.test(pinCode)) {
+                alert("Please enter a valid pin code. max is 6 ");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

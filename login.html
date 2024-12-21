@@ -1,0 +1,66 @@
+<html>
+	<head>
+	<link rel="stylesheet" href="f1.css"> 
+	<style>
+			h3{
+				font-size: 20px;
+				color:darkgoldenrod;
+				background-color: antiquewhite;
+				display: inline-block;
+				border-radius: 20PX;
+			}
+			i
+			{
+				font-size: 25px;
+				color:  #581010;
+				text-decoration: underline;
+			}
+			
+	</style>
+	</head>
+	<body>
+		<div class="main">
+		<form action="login.jsp" onsubmit="return validateForm()">
+                        <div>
+			<font size=3 color="blur">USERNAME</font><br>
+				<input type="text" name="a1" class="f" id="username"placeholder="enter your username" size="50" pattern="^[A-Z][a-z0-9]+">
+			</div><br>
+
+			
+			<div>
+				<font size=3 ><label>PASSWORD:</label></font><br>
+				<input type="password" name="a2"class="password" placeholder="enter password" id="password"size="50">
+			</div><br><br>
+<div class="submit">
+				<a href="">forget password?</a>
+				<input type="submit" value="LOGIN">
+				</div>
+                <center><h3>Don't have an account?please<a href="Register.html"><b><i>Sign up</i></b></a></h3><center></div>
+				
+		</form>
+		 <script>
+        function validateForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+                       var emailRegex =/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+            var passwordRegex =/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+
+           
+            if (!emailRegex.test(email)) {
+
+                alert("Please enter a valid email address");
+                return false;
+            }
+            if (!passwordRegex.test(password)) {
+                alert("Password must be between 6 to 20 characters long, contain at least one numeric digit, one uppercase and one lowercase letter");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+
+	</body>
+</html>

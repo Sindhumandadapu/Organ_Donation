@@ -1,0 +1,57 @@
+<html>
+	<head>
+	<link rel="stylesheet" href="f1.css"> 
+	<style>
+			h3{
+				font-size: 20px;
+				color:darkgoldenrod;
+				background-color: antiquewhite;
+				display: inline-block;
+				border-radius: 20PX;
+			}
+			i
+			{
+				font-size: 25px;
+				color:  #581010;
+				text-decoration: underline;
+			}
+			
+	</style>
+	</head>
+	<body>
+		<div class="main">
+		<form onsubmit="return validateForm()">
+                        <div>
+			<font size=3 color="blur">GMAIL</font><br>
+				<input type="email" name="a1" class="f" id="f1"placeholder="enter your username" size="50"required>
+			</div><br>
+			<div>
+				<font size=3 ><label>PASSWORD:</label></font><br>
+				<input type="password" name="a2"class="password" placeholder="enter password" id="d1"size="50"required>
+			</div><br><br>
+<div class="submit">
+				<a href="">forget password?</a>
+				<input type="submit" value="LOGIN">
+				</div>
+               				
+		</form>
+		
+		<script>
+			function validateForm() {
+				var username = document.getElementById("f1").value;
+				var password = document.getElementById("d1").value;
+				var validUsername = "sindhumandadapu24@gmail.com"; 
+				var validPassword = "SINDHU"; 
+				if (username === validUsername && password === validPassword) 
+				{
+					alert( "SUCCESS");
+					window.open('add.html');				 } 
+				else
+				{	
+					alert( "Invalid username or password");
+				}
+			}
+		</script>
+ 
+	</body>
+</html>

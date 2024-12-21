@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url("ct.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+    
+            form {
+	color:violet;
+	text-align:center;
+	border-radius: 0px;
+	margin-bottom: 10px;
+	background: transparent;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+	padding: 50px;
+	}
+    input[type=text] {
+    width: 300px;
+	padding: 10px;
+	font-size:14px;
+    border-radius:10px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	}
+	input[type=email] {
+    width: 300px;
+	padding: 10px;
+	font-size:14px;
+    border-radius:10px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	}
+
+    input[type=submit]{
+	background-color:cyan;
+	color:white;
+	padding: 12px 20px;
+	font-size:14px;
+    border-radius:10px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	background:#fsfsfs;
+	}
+        </style>
+    </head>
+    <body>
+            <form action="contact.jsp">
+                <h1>contact us</h1><br>
+                 <input type="email" name="f1" placeholder="email"  size="11"  autocomplete="off" required ><br><br>
+
+                  <input type="text" name="f2" placeholder="phone number" size="10" autocomplete="off" required minlength="10"maxlength="10"><br><br>
+                   <input type="text" name="f3" placeholder="message" size="50" autocomplete="off" style="height:100px"required><br><br>
+                   <center><input type="submit" value="submit"></center><br><br>
+        </form>
+    </body>
+</html>

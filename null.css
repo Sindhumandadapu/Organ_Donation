@@ -1,0 +1,215 @@
+}
+    .z {
+        width: 500px;
+        margin: 0 auto;
+        padding: 30px 0;
+          font-size: 15px;
+        }
+        .z ul{
+    display:inline-flex;
+    list-style: none;
+        }
+        
+    .z {
+        width: 500px;
+        margin: 0 auto;
+        padding: 30px 0;
+          font-size: 15px;
+        }
+        .z ul
+        .n
+{
+    display: none;
+}
+.z ul li:hover .n
+            {
+                display:block;
+                position: absolute;
+                border-radius:25px;
+                background:rgb(140, 122, 122);
+                margin-top: 7px;
+                margin-left:-10px;
+            }
+.z ul li:hover .n ul{
+                display: block;
+                margin:10px;
+
+            }
+			.f ul li a{
+				text-decoration: none;
+				color:aliceblue;
+			}
+ .z ul li:hover .n ul li{
+                width:5px;
+                padding:3px;
+                text-align: center;
+                .z {
+                    width: 500px;
+                    margin: 0 auto;
+                    padding: 30px 0;
+                      font-size: 15px;
+                    }
+                    .z ul{
+                display:inline-flex;
+                list-style: none;
+                    }
+                .z ul li{
+                    width:60px;
+                }
+                }
+                <li><a href="#">WHICH ORGNS<ul>
+                          TO BE DONATES</a>
+                          .{
+                            width:50px;
+                            margin:5px;
+                            padding:2px;
+                            font-style: italic bold;
+                            font-size-adjust:initial;
+                            cursor:pointer;
+                        }
+                 .f ul li .n
+                        {
+                            display: none;
+                            position: absolute;
+                            border-radius:25px;
+                            background:rgb(140, 122, 122);
+                            margin-top: 7px;
+                            margin-left:-10px;
+                        }
+                        .f ul li .n ul{
+                            display: block;
+                            margin:10px;
+            
+                        }
+                        .f ul li .n ul li{
+                            width:5px;
+                            padding:3px;
+                            text-align: center;
+                            <div class="m">
+							<font size=3 color="blur">ORGAN TO DONATE</font><br>
+						<div class="n"
+                            <ul>
+                                <li> HEART:
+                                <label for="yes">YES</label>
+                                 <input type="radio"name="choice-radio" size="48" >
+                            <input type="radio"name="choice-radio" size="48" >NO<br><br></li>
+                      <li>LUNGS: <input type="radio"name="r" size="48" >YES
+                            <input type="radio"name="r" size="48" >NO<br><br></li>
+                      <li> KIDNEY: <input type="radio"name="s" size="48" >YES
+                            <input type="radio"name="s" size="48" >NO<br><br></li>
+                      <li> LIVER: <input type="radio"name="t" size="48" >YES
+                            <input type="radio"name="t" size="48" >NO<br><br></li>
+                    <li> PANCREAS: <input type="radio"name="m" size="48" >YES
+                            <input type="radio"name="m" size="48" >NO<br><br></li>
+						</li>
+						</ul>
+					</div>
+                    </div>
+                    .m{
+                        display:inline-block;
+                    }
+                    
+                    .m li
+                    { 
+                       display: block;
+                       border: none;
+                       text-decoration: none;
+                       list-style: circle;
+                       padding: 10px  15px;
+                       cursor:pointer;
+                    }
+                    .m  .n{
+                    
+                        display:none;
+                        position:relative;
+                        min-width: 50px;
+                        box-shadow:  2px 2px 5px hsla(0, 0% 0%, 0, 8);
+                        background-color: antiquewhite;
+                    }
+                    .m:hover .n{
+                        display: block;
+                    }	
+                    .m{
+                        display:inline-block;
+                    }
+                    
+                    .m li
+                    { 
+                       display: block;
+                       border: none;
+                       text-decoration: none;
+                       list-style: circle;
+                       padding: 10px  15px;
+                       cursor:pointer;
+                    }
+                    .m  .n{
+                    
+                        display:none;
+                        position:relative;
+                        min-width: 50px;
+                        box-shadow:  2px 2px 5px hsla(0, 0% 0%, 0, 8);
+                        background-color: antiquewhite;
+                    }
+                    .m:hover .n{
+                        display: block;
+                    
+                        <select>	
+							<option>HEART</option>
+							<option>LIVER</option>
+							<option>KIDNEYS</option>
+							<option>LUNGS</option>
+						</select><br>
+                        
+                        <a href=""</a><div id="s3" class="n1"></div><h4>RECIVERS</h4>
+                        <a href=""</a><div id="s3" class="n1"></div><h4>RECIVERS</h4>
+                        <a href=""</a><div id="s5" class="n1"></div><h4>HELP US</h4>
+                    }
+                }
+                
+.menu a
+{ 
+   display: block;
+   border: none;
+   text-decoration:none;
+   padding: 10px  15px;
+   cursor:pointer;
+}
+.menu  .content{
+
+    display:none;
+    position:absolute;
+    min-width: 50px;
+    box-shadow:  2px 2px 5px hsla(0, 0% 0%, 0, 8);
+    background-color: antiquewhite;
+}
+.menu:hover .content{
+    display: block;
+}
+<a href="main1.html"text-decoration: none></a><div id="s1" class="n1"></div><h4>HOME</h4>
+<a href="donar.html"></a><div id="s2" class="n1"></div><h4>DONORS</h4>
+<a href="about.html"</a><div id="s4" class="n1"></div><h4>ABOUT</h4>
+<a href="statistics.html"</a><div id="s5" class="n1"></div><h4>STATISTICS</h4>
+<a href="contactus.html"</a><div id="s6" class="n1"></div><h4>CONTACT US</h4>
+</div>
+.n1:hover
+{
+    background-color: chartreuse;;
+    cursor:pointer;
+    font-size:50px;
+}
+.m1 
+{
+    display:flex;
+    background-color: aqua;
+    justify-content: space-around;
+    text-decoration: none;
+    position: fixed;
+    top: 5px;
+    font-size: 20px;
+    left:180px;
+    width:90%;
+    height:10%;
+}
+.n1 {
+    text-decoration: none;
+}

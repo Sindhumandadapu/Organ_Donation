@@ -1,0 +1,73 @@
+
+.main {
+	width: 600px;
+	margin: 0 auto;
+	}
+	form {
+	color:#778899;
+	background: transparent;
+	padding: 45px;
+	background-image: url('kk.jpg');
+	margin-top: 30%;
+	width:fit-content;
+	border-radius: 50px;
+	margin-left: 48px;
+	height: max-content;
+	}
+	
+
+    form:hover{
+        background-color:#581010;
+		
+    }
+	input[type="submit"]{
+	background-color: #04AA6D;
+	color: white;
+	padding: 12px 55px;
+	font-size:14px;
+    border-radius:10px;
+	cursor: pointer;
+	
+	}
+	h1{
+	color:green;
+	font-style: italic;
+	margin-bottom:200px;
+	
+	}
+
+	body{
+	color: #581010;
+	background-image: url('mn.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+	background-position: top center;
+	overflow: hidden;
+	}
+	a,font{
+		color:whitesmoke;
+		font-style:calc(bold);
+		
+	}
+	#c
+			{
+				width: 50px;
+				margin-top:-70px;
+				margin-right: 40px;
+
+			}
+	.password,.f{
+		background-color: rgb(217, 241, 100);
+		border-style:ridge;
+		padding:8px;
+		border-radius:14px;
+	}
+	.password,.f,#c,input[type="submit"]
+	{
+		animation-name:k;
+	animation-duration:1s;
+	animation-delay:0s;
+	animation-iteration-count:infinite;
+    }
+	

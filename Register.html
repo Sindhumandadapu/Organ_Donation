@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="f1.css"> 
+		<style>
+		</style>
+	<script>
+  function validateForm() {
+    var username = document.getElementById("username").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirmPassword").value;
+
+    // Regular expressions for validation
+    var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var phoneRegex = /^\d{10}$/; 
+    var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+
+    if (username == "" || email == "" || phone == "" || password == "" || confirmPassword == "") {
+      alert("All fields must be filled out");
+      return false;
+    }
+    
+    if (!email.match(emailRegex)) {
+      alert("Invalid email address");
+      return false;
+    }
+
+    if (!phone.match(phoneRegex)) {
+      alert("Invalid phone number");
+      return false;
+    }
+
+    if (!password.match(passwordRegex)) {
+      alert("Password must be 6 to 20 characters long and contain at least one numeric digit, one uppercase and one lowercase letter");
+      return false;
+    }
+
+    if (password !== confirmPassword) {
+      alert("Passwords do not match");
+      return false;
+    }
+
+    return true;
+  }
+</script>
+
+	</head>
+	<body>
+		<div class="main">
+		 <form  action="Register.jsp" onsubmit="return validateForm()" >
+
+			<div>
+			<font size=3 color="blur">USERNAME</font><br>
+				<input type="text" name="t1" class="f" id="username"placeholder="enter your username" size="50" pattern="^[A-Z][a-z0-9]+">
+			</div><br>
+<div>
+			<font size=3 color="blur">EMAIL</font><br>
+				<input type="text" name="t2" class="f" id="email"placeholder="sindhu@gmail.com" size="50" >
+			</div><br>
+                        <div>
+			<font size=3 color="blur">phone number</font><br>
+				<input type="text" name="t3" class="f" id="phone"placeholder="987654321" size="50">			</div><br>
+
+			<div>
+				<font size=5 color="blur"><label>PASSWORD:</label></font><br>
+				<input type="password" class="password" name="t4" placeholder="987654321" id="password"size="50" >
+			</div><br>
+			<div>
+				<font size=5 color="blur"><label>CONFIRM PASSWORD:</label></font><br>
+				<input type="password" class="password"name="t5" placeholder="987654321" id="confirmPassword"size="50">
+			</div><br><br>
+			<div class="submit">
+				<input type="submit" value="SUBMIT">
+			</div>
+		</form>
+		</div>
+		
+	</body>
+</html>	
+			
